@@ -180,10 +180,10 @@ public class Main {
     public static void main(String[] args) {
         Scanner in = new Scanner(System.in);
         int num = in.nextInt();
+        in.nextLine();
         List<List<Integer>> grath = new ArrayList<List<Integer>>();
         for (int i = 0; i < num; i++) {
             grath.add(new ArrayList<Integer>());
-            in = new Scanner(System.in);
             String line = in.nextLine();
             for (int j = 0; j < num; j++) {
                 if (line.charAt(j) == '+') {
