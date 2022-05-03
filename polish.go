@@ -13,6 +13,9 @@ import (
 func i_hate_parsing(s []string, index int) (*list.List, int) {
 	parsed := list.New()
 	var c *list.List
+	if index >= len(s) {
+		return nil, index
+	}
 	if s[index] == "(" {
 		index++
 		c, index = i_hate_parsing(s, index)
