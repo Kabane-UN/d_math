@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
 
-public class Main {
+public class mars {
     public static boolean compare(List<Integer> a, List<Integer> b) {
         int ismin = 0;
         for (int j = 0; j < Math.min(a.size(), b.size());  j++){
