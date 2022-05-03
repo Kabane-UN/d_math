@@ -2,7 +2,7 @@ import org.jetbrains.annotations.NotNull;
 
 import java.util.*;
 
-public class Main {
+public class MaxComponent {
     public static void main(String[] args) {
         Scanner in = new Scanner(System.in);
         int n = in.nextInt();
