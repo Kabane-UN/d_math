@@ -52,6 +52,8 @@ public class LangMealy {
         in.nextLine();
         Set<String> res = new HashSet<>();
         Set<String> rez = foo(res, "", n,m, g, f, start, num);
-        System.out.println(rez);
+        for (var i : rez){
+            System.out.println(i);
+        }
     }
 }
