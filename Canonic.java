@@ -67,6 +67,6 @@ public class Canonic {
             }
             System.out.print("\n");
         }
-        System.out.println(done);
+       
     }
 }
