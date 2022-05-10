@@ -34,6 +34,9 @@ public class Canonic {
         stack.push(start);
         while (stack.size() != 0) {
             var i = stack.pop();
+            if (done.stream().anyMatch(x -> Objects.equals(x, i))){
+                continue;
+            }
             done.add(i);
             Stack<Integer> gstack = new Stack<>();
             List<Integer> doneable = new ArrayList<>();
