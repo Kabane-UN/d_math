@@ -34,16 +34,18 @@ public class Canonic {
         stack.push(start);
         while (stack.size() != 0) {
             var i = stack.pop();
+            done.add(i);
             Stack<Integer> gstack = new Stack<>();
+            List<Integer> doneable = new ArrayList<>();
             for(int c: g.get(i)){
-                if (done.stream().noneMatch(x -> x == c)){
+                if (done.stream().noneMatch(x -> x == c) && doneable.stream().noneMatch(x -> x == c)){
                     gstack.push(c);
+                    doneable.add(c);
                 }
             }
             while (gstack.size() != 0){
                 stack.push(gstack.pop());
             }
-            done.add(i);
         }
         System.out.println(n);
         System.out.println(m);
@@ -62,5 +64,6 @@ public class Canonic {
             }
             System.out.print("\n");
         }
+        System.out.println(done);
     }
 }
