@@ -43,3 +43,5 @@ public class Mealy2Moore {
             }
         }
         System.out.println("}");
+    }
+}
