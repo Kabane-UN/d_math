@@ -2,7 +2,7 @@ import java.util.*;
 
 import static java.lang.Math.min;
 
-public class Main {
+public class Mealy2Moore {
     public static void main(String[] args) {
         Scanner in = new Scanner(System.in);
         int m = in.nextInt();
